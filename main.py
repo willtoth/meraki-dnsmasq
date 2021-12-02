@@ -60,7 +60,8 @@ def main():
         print(f'# Device: {client["description"]}, MAC: {client["mac"]}')
         print(
             f'# SSID: {client["ssid"]}, OS: {client["os"]}, Vendor: {client["manufacturer"]}')
-        print(f'{prefix}address=/{dns_name}.lan/{client["ip"]}')
+        print(f'{prefix}address=/{dns_name}/{client["ip"]}')
+        print(f'{prefix}address=/{dns_name}.internal/{client["ip"]}')
 
 
 if __name__ == '__main__':
